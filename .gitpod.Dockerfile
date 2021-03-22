@@ -2,7 +2,6 @@ FROM baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-anaconda3
 
 RUN bash -c "conda create -n python35 python=3.5"
 
-RUN conda activate python35 \
- && pip install --upgrade pip
+RUN bash -c "conda activate python35 && pip install --upgrade pip"
 
 
