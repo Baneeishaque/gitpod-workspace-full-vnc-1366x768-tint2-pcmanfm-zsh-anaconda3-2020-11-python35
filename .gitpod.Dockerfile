@@ -6,3 +6,5 @@ RUN conda create -y -n python35 python=3.5
 # SHELL ["conda", "run", "-n", "python35", "/bin/bash", "-c"]
 
 # RUN pip install --upgrade pip
+
+RUN pyenv global anaconda3-2020.11/envs/python35
