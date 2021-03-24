@@ -8,3 +8,5 @@ RUN conda create -y -n python35 python=3.5
 # RUN pip install --upgrade pip
 
 RUN pyenv global anaconda3-2020.11/envs/python35
+RUN echo "conda activate python35" >> ~/.bashrc
+RUN echo "conda activate python35" >> ~/.zshrc
